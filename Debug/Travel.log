@@ -1,0 +1,10 @@
+﻿  Car.cpp
+  Express.cpp
+C:\Users\dpavl\source\repos\Travel\Express.cpp(46,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Train.cpp
+C:\Users\dpavl\source\repos\Travel\Train.cpp(52,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Transport.cpp
+C:\Users\dpavl\source\repos\Travel\Transport.cpp(29,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Travel.cpp
+  Создание кода...
+  Travel.vcxproj -> C:\Users\dpavl\source\repos\Travel\Debug\Travel.exe
