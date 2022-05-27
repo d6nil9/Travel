@@ -1,2 +1,4 @@
 C:\Users\dpavl\source\repos\Travel\Debug\Travel.exe
 C:\Users\dpavl\source\repos\Travel\Debug\Travel.pdb
+D:\forgit\Travel\Debug\Travel.exe
+D:\forgit\Travel\Debug\Travel.pdb
