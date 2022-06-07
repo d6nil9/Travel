@@ -1,2 +1,11 @@
-﻿  Travel.cpp
+﻿  Express.cpp
+D:\forgit\Travel\Express.h(5,24): warning C4584: Express: базовый класс "Politeness" уже является базовым классом для "Train"
+D:\forgit\Travel\Politeness.h(3): message : см. объявление "Politeness"
+D:\forgit\Travel\Train.h(5): message : см. объявление "Train"
+  Train.cpp
+  Travel.cpp
+D:\forgit\Travel\Express.h(5,24): warning C4584: Express: базовый класс "Politeness" уже является базовым классом для "Train"
+D:\forgit\Travel\Politeness.h(3): message : см. объявление "Politeness"
+D:\forgit\Travel\Train.h(5): message : см. объявление "Train"
+  Создание кода...
   Travel.vcxproj -> D:\forgit\Travel\Debug\Travel.exe

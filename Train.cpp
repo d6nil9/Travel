@@ -23,7 +23,7 @@ void Train::GetSeats()
 {
 	if (canTravel == true)
 	{
-		Train::GetTicket();
+		Train::GetPoliteness();
 	}
 	else
 	{
@@ -47,10 +47,7 @@ void Train::PassengerCanTravel()
 	}
 }
 
-void Train::GetTicket()
+void Train::GetPoliteness()
 {
-	srand(time(0));
-	ticketNum = 1000 + rand() % (9999 - 1000);
-	ticket = to_string(ticketNum);
-	cout << "\nНомер вашего билета: " + ticket;
+	cout << "\nСчастливого путешествия на поезде!" << endl;
 }

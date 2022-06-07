@@ -11,7 +11,6 @@ void Car::GetTravelPrice()
 	Transport::GetTravelPrice();
 	travelCarPrice = travelPrice * 1.5;
 	cout << "Это путешествие вам обойдется вам в " << travelCarPrice << " рублей";
-	cout << "\t\tThread ID: " << this_thread::get_id() << "\t\tGetTravelPrice\t" << endl;
 }
 
 void Car::GetSeats()
@@ -19,7 +18,6 @@ void Car::GetSeats()
 	minSeats = 1;
 	maxSeats = 5;
 	Transport::GetSeats();
-	cout << "\t\tThread ID: " << this_thread::get_id() << "\t\tGetSeats\t" << endl;
 }
 
 void Car::PassengerCanTravel()
@@ -27,13 +25,17 @@ void Car::PassengerCanTravel()
 	Transport::PassengerCanTravel();
 	if (passengerMoney >= travelCarPrice) {
 		cout << "Вы можете путешествовать!";
-		cout << "\t\tThread ID: " << this_thread::get_id() << "\t\tPassengerCanTravel\t" << endl;
+		Car::GetPoliteness();
 		canTravel = true;
 	}
 	else {
 		cout << "Вы не можете путешествовать!" << endl;
 		cout << "Вам не хватает: " << travelCarPrice - passengerMoney << " рублей" << endl;
-		cout << "\t\tThread ID: " << this_thread::get_id() << "\t\tPassengerCanTravel\t" << endl;
 		canTravel = false;
 	}
+}
+
+void Car::GetPoliteness()
+{
+	cout << "\nСчастливого путешествия на машине!" << endl;
 }

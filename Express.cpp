@@ -17,7 +17,7 @@ void Express::GetSeats()
 {
 	if (canTravel == true)
 	{
-		Express::GetTicket();
+		Express::GetPoliteness();
 	}
 	else
 	{
@@ -41,10 +41,7 @@ void Express::PassengerCanTravel()
 	}
 }
 
-void Express::GetTicket()
+void Express::GetPoliteness()
 {
-	srand(time(0));
-	ticketNum = 100 + rand() % (999 - 100);
-	ticket = to_string(ticketNum);
-	cout << "\nНомер вашего билета: ExPre$$$$::::" + ticket + "::::ExPre$$$$";
+	cout << "\nСчастливого путешествия на экспрессе!" << endl;
 }

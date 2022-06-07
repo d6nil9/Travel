@@ -1,7 +1,5 @@
 ﻿#include <iostream>
 #include <string>
-#include <thread>
-#include <chrono>
 #include "Transport.h"
 #include "Car.h"
 #include "Train.h"
@@ -44,14 +42,8 @@ int main()
     if (transportChoice == 1) {
         Car* carTravel = new Car(travel, travelPrice);
         cout << "Вы выбрали машину!" << endl;
-        thread thr1([&]() {
-            carTravel->GetTravelPrice();
-        });
-        thr1.join();
-        thread thr2([&]() {
-            carTravel->PassengerCanTravel();
-            });
-        thr2.join();
+        carTravel->GetTravelPrice();
+        carTravel->PassengerCanTravel();
         carTravel->GetSeats();
         delete carTravel;
     }

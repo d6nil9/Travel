@@ -148,6 +148,7 @@
   <ItemGroup>
     <ClInclude Include="Car.h" />
     <ClInclude Include="Express.h" />
+    <ClInclude Include="Politeness.h" />
     <ClInclude Include="Train.h" />
     <ClInclude Include="Transport.h" />
   </ItemGroup>

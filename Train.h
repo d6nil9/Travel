@@ -1,7 +1,8 @@
 #pragma once
 #include "Transport.h"
+#include "Politeness.h"
 
-class Train : public Transport
+class Train : public Transport, public Politeness
 {
 public:
 	Train();
@@ -10,10 +11,5 @@ public:
 	void GetTravelPrice() override;
 	void GetSeats() override;
 	void PassengerCanTravel() override;
-	virtual void GetTicket();
-protected:
-	int ticketNum = 0;
-	string ticket;
+	void GetPoliteness() override;
 };
-
-
